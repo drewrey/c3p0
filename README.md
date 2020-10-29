@@ -4,9 +4,22 @@ C3P0 contains protocol definitions.
 
 Centralizing these definitions, it is hoped that libraries and applications will make use of them to make data more portable between components of a system.
 
-# Protocols
+## Installation
 
-## ID
+If [available in Hex](https://hex.pm/docs/publish), the package can be installed
+by adding `c3p0` to your list of dependencies in `mix.exs`:
+
+```elixir
+def deps do
+  [
+    {:c3p0, "~> 0.3.0"}
+  ]
+end
+```
+
+## Protocols
+
+### ID
 
 This protocol standardizes finding an ID for a peice of data.
 
@@ -28,13 +41,13 @@ defmodule MyStruct do
 end
 ```
 
-## Humanize
+### Humanize
 
 The `C3P0.Humanize` protocol displays as a string the data provided.
 
 Falls back to a simple `to_string`
 
-## Blank
+### Blank
 
 The `C3P0.Blank` protocol deals with blankness.
 
@@ -54,18 +67,6 @@ C3P0 is aiming to be a central collection of useful protocols and we'd love more
 
 Please raise an issue or submit a PR. Protocols can be really powerful especially if everyone uses the same ones.
 
-## Installation
-
-If [available in Hex](https://hex.pm/docs/publish), the package can be installed
-by adding `c3p0` to your list of dependencies in `mix.exs`:
-
-```elixir
-def deps do
-  [
-    {:c3p0, "~> 0.1.0"}
-  ]
-end
-```
 
 Documentation can be generated with [ExDoc](https://github.com/elixir-lang/ex_doc)
 and published on [HexDocs](https://hexdocs.pm). Once published, the docs can
