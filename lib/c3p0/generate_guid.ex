@@ -4,9 +4,9 @@ defprotocol C3P0.GenerateGuid do
   """
 
   @type generated_attrs :: %{
-    id: binary,
-    guid: String.t()
-  }
+          id: binary,
+          guid: String.t()
+        }
 
   @type parent :: map
 

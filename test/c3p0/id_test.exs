@@ -86,9 +86,11 @@ defmodule C3P0.IDTest do
     test "struct" do
       assert ID.guid(%IDStruct{token: "the-id"}) == "the-id"
       assert ID.guid(%FullIDStruct{token: "the-id", the_guid: "the-guid"}) == "the-guid"
-      assert ID.guid(%{__struct__: UnknownIDStruct, unknown_id: "the-id", unknown_guid: "guid"}) == "guid"
+
+      assert ID.guid(%{__struct__: UnknownIDStruct, unknown_id: "the-id", unknown_guid: "guid"}) ==
+               "guid"
+
       assert ID.guid(%UnimplementedStruct{id: "the-id", guid: "the-guid"}) == "the-guid"
     end
-
   end
 end

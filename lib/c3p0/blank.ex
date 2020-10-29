@@ -42,6 +42,7 @@ end
 defimpl C3P0.Blank, for: MapSet do
   def blank?(ms), do: MapSet.size(ms) == 0
   def present?(ms), do: not C3P0.Blank.blank?(ms)
+
   def presence(ms) do
     if MapSet.size(ms) == 0 do
       nil
