@@ -21,7 +21,7 @@ end
 
 ### ID
 
-This protocol standardizes finding an ID for a peice of data.
+`C3P0.ID` is a protocol to standardize finding an ID for a peice of data.
 
 There are two functions in this protocol:
 
@@ -41,15 +41,20 @@ defmodule MyStruct do
 end
 ```
 
+### GenerateGuid
+
+`C3P0.GenerateGuid` is a protocol to generate a map containing an `id` and `guid` given a resource.
+
+
 ### Humanize
 
-The `C3P0.Humanize` protocol displays as a string the data provided.
+`C3P0.Humanize` is a protocol to display as a string the data provided.
 
 Falls back to a simple `to_string`
 
 ### Blank
 
-The `C3P0.Blank` protocol deals with blankness.
+`C3P0.Blank` is a protocol to handle blankness.
 
 Empty strings, bbinaries, lists, maps and tuples are considered `blank?` along with `nil`.
 
@@ -58,6 +63,10 @@ The protocol defines 3 functions:
 * `blank?(data)` - true/false
 * `present?(data)` - true/false
 * `presence(data)` - returns the value if it is not blank. nil if it is blank
+
+### Metadata
+
+`C3P0.Metadata` is a protocol to provide a map of metadata about a struct.
 
 ## Contributing
 
