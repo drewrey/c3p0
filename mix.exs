@@ -16,6 +16,7 @@ defmodule C3P0.MixProject do
       docs: [
         canonical: "https://hexdocs.pm/c3p0",
         extras: ["README.md"],
+        main: "readme",
         source_ref: "v#{@version}",
         source_url: "https://github.com/hassox/c3p0"
       ],
