@@ -6,8 +6,7 @@ Centralizing these definitions, it is hoped that libraries and applications will
 
 ## Installation
 
-If [available in Hex](https://hex.pm/docs/publish), the package can be installed
-by adding `c3p0` to your list of dependencies in `mix.exs`:
+The package can be installed by adding `c3p0` to your list of dependencies in `mix.exs`:
 
 ```elixir
 def deps do
